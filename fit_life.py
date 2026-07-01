@@ -28,7 +28,8 @@ bmi = round(user_weight / (user_height ** 2), 1)
 
 # 5. Расчет нормы воды
 water_per_kg = 30
-water_needed = user_weight * water_per_kg / 1000
+liter_per_ml = 1000
+water_needed = user_weight * water_per_kg / liter_per_ml
 
 # 6. Вывод красивого результата
 print(f"Отчет для пользователя: {user_name} ({user_age} г.)\n")
